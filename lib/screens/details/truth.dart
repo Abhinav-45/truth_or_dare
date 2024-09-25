@@ -39,20 +39,20 @@ class _TruthScreenState extends State<TruthScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.purple[50], // AppBar background color
+        backgroundColor: Colors.purple[50],
         leading: IconButton(
           onPressed: () => context.pop(),
-          icon: Icon(Icons.arrow_back_ios,
-              color: const Color.fromARGB(255, 20, 20, 20)),
+          icon: const Icon(Icons.arrow_back_ios,
+              color: Color.fromARGB(255, 20, 20, 20)),
         ),
-        title: Text('Truth',
+        title: const Text('Truth',
             style: TextStyle(
                 color: Color.fromARGB(255, 109, 63, 144),
                 fontWeight: FontWeight.bold)),
         centerTitle: true,
       ),
       body: Container(
-        color: Colors.purple[50], // Light purple background
+        color: Colors.purple[50], 
         child: Center(
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 24.0),
@@ -60,38 +60,38 @@ class _TruthScreenState extends State<TruthScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 _isLoading
-                    ? CircularProgressIndicator()
+                    ? const CircularProgressIndicator()
                     : SingleChildScrollView(
                         child: Center(
                           child: Text(
                             _question,
                             style: TextStyle(
                               fontSize:
-                                  20, // Increased font size for better readability
+                                  20, 
                               fontWeight: FontWeight.bold,
-                              color: Colors.deepPurple[800], // Dark purple text
+                              color: Colors.deepPurple[800], 
                             ),
                             textAlign: TextAlign.center,
                           ),
                         ),
                       ),
-                SizedBox(height: 30), // More space before the button
+                const SizedBox(height: 30), 
                 ElevatedButton(
                   onPressed: _isLoading ? null : _loadQuestion,
                   style: ElevatedButton.styleFrom(
                     backgroundColor:
-                        Colors.deepPurple[700], // Deep purple button
+                        Colors.deepPurple[700], 
                     foregroundColor:
-                        Colors.amber[300], // Gold button text color
+                        Colors.amber[300], 
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(12.0),
                     ),
                     padding:
-                        EdgeInsets.symmetric(vertical: 16.0, horizontal: 32.0),
+                        const EdgeInsets.symmetric(vertical: 16.0, horizontal: 32.0),
                   ),
-                  child: Text(
+                  child: const Text(
                     'New Question',
-                    style: TextStyle(fontSize: 18.0), // Slightly larger text
+                    style: TextStyle(fontSize: 18.0), 
                   ),
                 ),
               ],

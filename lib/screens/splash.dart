@@ -33,7 +33,7 @@ class _SplashScreenState extends State<SplashScreen>
       CurvedAnimation(parent: _controller, curve: Curves.easeInOut),
     );
 
-    Timer(Duration(seconds: 4), () {
+    Timer(const Duration(seconds: 4), () {
       context.go('/home');
     });
   }
@@ -58,7 +58,7 @@ class _SplashScreenState extends State<SplashScreen>
                   opacity: _opacityAnimation.value,
                   child: Transform.scale(
                     scale: _scaleAnimation.value,
-                    child: Text(
+                    child: const Text(
                       'Truth or Dare',
                       style: TextStyle(
                         fontSize: 32,

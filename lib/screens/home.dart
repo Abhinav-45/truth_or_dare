@@ -11,20 +11,20 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.deepPurple[50], // Light purple background
+      backgroundColor: Colors.deepPurple[50], 
       body: SafeArea(
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               _buildButton('Truth', '/home/truth', context),
-              SizedBox(height: 16),
+              const SizedBox(height: 16),
               _buildButton('Dare', '/home/dare', context),
-              SizedBox(height: 16),
+              const SizedBox(height: 16),
               _buildButton('Would you rather?', '/home/wyr', context),
-              SizedBox(height: 16),
+              const SizedBox(height: 16),
               _buildButton('Never have I ever?', '/home/nhie', context),
-              SizedBox(height: 16),
+              const SizedBox(height: 16),
               _buildButton('Paranoia Question', '/home/pq', context),
             ],
           ),
@@ -39,16 +39,16 @@ class HomeScreen extends StatelessWidget {
       child: ElevatedButton(
         onPressed: () => _navigateTo(route, context),
         style: ElevatedButton.styleFrom(
-          backgroundColor: Colors.deepPurple[700], // Dark purple button
-          foregroundColor: Colors.amber[100], // Light gold text
+          backgroundColor: Colors.deepPurple[700], 
+          foregroundColor: Colors.amber[100], 
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12.0),
           ),
-          padding: EdgeInsets.symmetric(vertical: 16.0, horizontal: 32.0),
+          padding: const EdgeInsets.symmetric(vertical: 16.0, horizontal: 32.0),
         ),
         child: Text(
           text,
-          style: TextStyle(fontSize: 16.0),
+          style: const TextStyle(fontSize: 16.0),
         ),
       ),
     );
