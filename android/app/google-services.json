@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "290736913340",
+    "project_id": "truth-rd",
+    "storage_bucket": "truth-rd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:290736913340:android:9eb6aa9ab2e6b5957849b9",
+        "android_client_info": {
+          "package_name": "com.example.truth_or_dare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "290736913340-fslcuirj8k204l4at0junlhdcs0q817o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.truth_or_dare",
+            "certificate_hash": "45c301c53d9dc3a44584917734150ca1071a7030"
+          }
+        },
+        {
+          "client_id": "290736913340-pmoebl35rhm5ocan6b46pbmmi9k3nal7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOP-aWMBy7KoW6PwZ739b1gj0BhZ75wGA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "290736913340-pmoebl35rhm5ocan6b46pbmmi9k3nal7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "290736913340-s6hc7ssjrr1a4ho3ab6vjeai73sh52vj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.truthAndDare"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
