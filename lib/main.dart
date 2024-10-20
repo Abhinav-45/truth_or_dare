@@ -4,7 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:truth_or_dare/utils/routing.dart';
 
 import 'services/firebase_service.dart';
-import 'utils/firebase_options.dart';
+import 'firebase_options.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
